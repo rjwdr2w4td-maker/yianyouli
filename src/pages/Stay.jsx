@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Stay.css';
 
-const imageUrl = () => 'https://lf-cdn.trae.com.cn/obj/trae-ai-image/page_image/default.jpeg';
+const imageUrl = () => `${import.meta.env.BASE_URL}images/yian-cover.jpg`;
 
 const Stay = () => {
   const [selectedCategory, setSelectedCategory] = useState('全部');

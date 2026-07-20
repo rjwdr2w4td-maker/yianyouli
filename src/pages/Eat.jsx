@@ -3,7 +3,7 @@ import '../styles/Eat.css';
 import { useFeedback } from '../components/Feedback';
 import { readTrips, removeTrip, saveTrip } from '../data/profileStorage';
 
-const imageUrl = () => 'https://lf-cdn.trae.com.cn/obj/trae-ai-image/page_image/default.jpeg';
+const imageUrl = () => `${import.meta.env.BASE_URL}images/yian-cover.jpg`;
 
 const Eat = () => {
   const [selectedCategory, setSelectedCategory] = useState('全部');

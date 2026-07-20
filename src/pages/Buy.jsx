@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Buy.css';
 import { useFeedback } from '../components/Feedback';
 
-const imageUrl = () => 'https://lf-cdn.trae.com.cn/obj/trae-ai-image/page_image/default.jpeg';
+const imageUrl = () => `${import.meta.env.BASE_URL}images/yian-cover.jpg`;
 
 const Buy = () => {
   const [selectedCategory, setSelectedCategory] = useState('全部');
