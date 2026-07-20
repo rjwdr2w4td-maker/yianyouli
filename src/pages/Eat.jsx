@@ -3,7 +3,7 @@ import '../styles/Eat.css';
 import { useFeedback } from '../components/Feedback';
 import { readTrips, removeTrip, saveTrip } from '../data/profileStorage';
 
-const imageUrl = (prompt, imageSize = 'landscape_4_3') => `https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=${encodeURIComponent(prompt)}&image_size=${imageSize}`;
+const imageUrl = () => 'https://lf-cdn.trae.com.cn/obj/trae-ai-image/page_image/default.jpeg';
 
 const Eat = () => {
   const [selectedCategory, setSelectedCategory] = useState('全部');

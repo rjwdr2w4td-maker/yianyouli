@@ -1,4 +1,4 @@
-const createImageUrl = (prompt, imageSize) => `https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=${encodeURIComponent(prompt)}&image_size=${imageSize}`;
+const createImageUrl = () => 'https://lf-cdn.trae.com.cn/obj/trae-ai-image/page_image/default.jpeg';
 
 export const travelImages = {
   homeCover: createImageUrl('Realistic documentary travel photograph of Liqiao Water Town in Yian District Tongling Anhui China at dusk, authentic Hui style white walls and dark roofs, canal reflections, red lanterns, a small wooden boat, natural cinematic light, no illustration, no text, professional tourism photography', 'portrait_4_3'),
