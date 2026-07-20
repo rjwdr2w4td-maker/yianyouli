@@ -1,0 +1,188 @@
+.local-detail-page {
+  background: var(--paper);
+}
+
+.local-detail-header {
+  padding: 12px 20px 20px;
+  color: var(--paper);
+  background: var(--moss);
+}
+
+.local-detail-back {
+  display: block;
+  margin-bottom: 18px;
+  color: #d3cec2;
+  font-size: 11px;
+}
+
+.local-detail-header > span,
+.local-detail-story > span {
+  color: #d49a81;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 9px;
+  letter-spacing: .14em;
+}
+
+.local-detail-header h1 {
+  margin: 7px 0 5px;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 29px;
+  font-weight: 500;
+  letter-spacing: -.05em;
+}
+
+.local-detail-header p {
+  margin: 0;
+  color: #d3cec2;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 12px;
+}
+
+.local-detail-hero {
+  height: 275px;
+  position: relative;
+  overflow: hidden;
+  background: var(--paper-deep);
+}
+
+.local-detail-hero img {
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(.84) contrast(1.04);
+}
+
+.local-detail-hero span {
+  position: absolute;
+  left: 18px;
+  bottom: 16px;
+  padding: 7px 9px;
+  color: var(--white);
+  background: rgba(32, 37, 32, .78);
+  font-size: 10px;
+}
+
+.local-detail-content {
+  padding: 28px 20px 34px;
+  border-bottom: 1px solid var(--ink);
+}
+
+.local-detail-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 15px;
+  color: var(--copper);
+  border-bottom: 1px solid var(--line);
+  font-size: 10px;
+}
+
+.local-detail-meta strong {
+  text-align: right;
+  font-weight: 600;
+}
+
+.local-detail-intro {
+  margin: 23px 0;
+  color: var(--ink-soft);
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 16px;
+  line-height: 1.95;
+}
+
+.local-detail-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  padding-top: 17px;
+  border-top: 1px solid var(--ink);
+}
+
+.local-detail-highlights span {
+  padding: 7px 9px;
+  color: var(--ink-soft);
+  background: var(--paper-deep);
+  font-size: 10px;
+}
+
+.local-detail-primary {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding: 16px 18px;
+  color: var(--white);
+  background: var(--ink);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.local-detail-primary strong,
+.local-detail-footer-link strong {
+  color: #d49a81;
+}
+
+.local-detail-story {
+  padding: 34px 20px 30px;
+}
+
+.local-detail-story h2 {
+  margin: 8px 0 15px;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: -.04em;
+}
+
+.local-detail-story > p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 14px;
+  line-height: 1.95;
+}
+
+.local-detail-tip {
+  margin-top: 27px;
+  padding: 17px;
+  background: var(--paper-deep);
+  border-left: 3px solid var(--copper);
+}
+
+.local-detail-tip strong {
+  font-size: 11px;
+}
+
+.local-detail-tip p {
+  margin: 8px 0 0;
+  color: var(--ink-soft);
+  font-family: "Songti SC", "STSong", SimSun, serif;
+  font-size: 11px;
+  line-height: 1.75;
+}
+
+.local-detail-footer-link {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  padding: 17px 0 25px;
+  border-top: 1px solid var(--line);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.local-detail-empty {
+  padding: 12px 20px;
+}
+
+.local-detail-empty h1 {
+  margin: 100px 0 28px;
+  font-family: "Songti SC", "STSong", SimSun, serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.local-detail-action {
+  color: var(--copper);
+  font-size: 12px;
+  font-weight: 700;
+}

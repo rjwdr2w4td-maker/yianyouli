@@ -1,0 +1,267 @@
+.services-page {
+  background: var(--paper);
+}
+
+.service-dashboard {
+  padding: 24px 20px 22px;
+  color: var(--paper);
+  background: var(--moss);
+}
+
+.service-topline,
+.service-status {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  letter-spacing: .08em;
+}
+
+.weather-block {
+  display: grid;
+  grid-template-columns: 95px 1fr;
+  align-items: end;
+  gap: 10px;
+  padding: 34px 0 30px;
+}
+
+.weather-block > strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 68px;
+  font-weight: 400;
+  line-height: .8;
+}
+
+.weather-block h1 {
+  margin: 0 0 8px;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.weather-block p {
+  margin: 0;
+  color: #c7d0d3;
+  font-size: 10px;
+}
+
+.service-status {
+  padding-top: 15px;
+  border-top: 1px solid rgba(255,255,255,.28);
+}
+
+.service-status button {
+  color: var(--paper);
+  font-size: 10px;
+}
+
+.green-dot {
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  margin-right: 7px;
+  background: #75b891;
+}
+
+.service-notice {
+  margin-top: 14px;
+  padding: 12px;
+  color: #e8e4d9;
+  border: 1px solid rgba(255,255,255,.25);
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.quick-services,
+.traffic-module {
+  padding: 32px 20px;
+}
+
+.module-heading {
+  margin-bottom: 18px;
+}
+
+.module-heading h2 {
+  margin: 0;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.service-directory {
+  border-top: 1px solid var(--ink);
+}
+
+.service-row {
+  width: 100%;
+  min-height: 78px;
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 9px;
+  border-bottom: 1px solid var(--line);
+}
+
+.service-icon {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  color: white;
+  background: var(--ink);
+}
+
+.service-copy strong,
+.service-copy small {
+  display: block;
+}
+
+.service-copy strong {
+  margin-bottom: 5px;
+  font-family: "Songti SC", "STSong", serif;
+  font-size: 16px;
+}
+
+.service-copy small,
+.service-action {
+  color: var(--ink-soft);
+  font-size: 10px;
+}
+
+.service-action {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.ticket-module {
+  padding: 30px 20px;
+  color: var(--paper);
+  background: #273b48;
+}
+
+.module-heading.light h2 {
+  color: var(--paper);
+}
+
+.ticket-module-intro {
+  margin: -4px 0 18px;
+  color: #c7d0d3;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.ticket-options {
+  display: grid;
+  gap: 8px;
+}
+
+.ticket-options a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 5px 12px;
+  padding: 14px;
+  color: #d3dadd;
+  border: 1px solid rgba(255,255,255,.28);
+}
+
+.ticket-options strong,
+.ticket-options span {
+  grid-column: 1;
+}
+
+.ticket-options strong {
+  font-family: "Songti SC", "STSong", serif;
+  font-size: 16px;
+}
+
+.ticket-options span {
+  color: #aebabe;
+  font-size: 10px;
+}
+
+.ticket-options b {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  color: #e4b49d;
+  font-size: 10px;
+}
+
+.traffic-module {
+  border-bottom: 1px solid var(--ink);
+}
+
+.traffic-line {
+  display: grid;
+  grid-template-columns: 88px 1fr 88px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.traffic-line > span {
+  position: relative;
+  color: var(--ink-soft);
+  text-align: center;
+  font-size: 9px;
+}
+
+.traffic-line > span::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--line);
+}
+
+.traffic-node {
+  padding: 11px 5px;
+  border: 1px solid var(--line);
+  text-align: center;
+  font-size: 11px;
+}
+
+.traffic-node.active {
+  color: white;
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.emergency-module {
+  margin: 28px 20px;
+  padding: 25px 20px;
+  border: 1px solid var(--ink);
+}
+
+.emergency-module > span {
+  color: var(--copper);
+  font-size: 10px;
+}
+
+.emergency-module h2 {
+  margin: 8px 0 10px;
+  font-family: "Songti SC", "STSong", serif;
+  font-size: 24px;
+}
+
+.emergency-module strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.emergency-module p {
+  color: var(--ink-soft);
+  font-size: 11px;
+}
+
+.emergency-module a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 14px;
+  color: white;
+  background: var(--copper);
+  font-size: 11px;
+}

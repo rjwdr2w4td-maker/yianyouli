@@ -1,0 +1,21 @@
+.stay-page .section-header {
+  border-left: 5px solid #31566a;
+}
+
+.stay-page .story-entry:nth-child(odd) .story-image {
+  height: 250px;
+}
+
+.stay-contact-action {
+  color: var(--ink);
+}
+
+.stay-contact-action:hover {
+  color: #31566a;
+  border-bottom-color: #31566a;
+}
+
+.stay-contact-action span {
+  color: #31566a;
+  font-size: 14px;
+}

@@ -1,0 +1,1167 @@
+.detail-page {
+  background: var(--paper);
+}
+
+.detail-header {
+  min-height: 0;
+  padding: 12px 20px 16px;
+  color: var(--paper);
+  background: var(--moss);
+  border-bottom: 0;
+}
+
+.detail-back {
+  display: block;
+  margin-bottom: 12px;
+  color: #d3cec2;
+  font-size: 11px;
+}
+
+.detail-header > span,
+.detail-hero > span,
+.detail-note > span {
+  color: #d49a81;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 9px;
+  letter-spacing: .14em;
+}
+
+.detail-header h1 {
+  margin: 5px 0 4px;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -.04em;
+}
+
+.detail-header p {
+  margin: 0;
+  color: #d3cec2;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.detail-hero {
+  height: 286px;
+  position: relative;
+  overflow: hidden;
+  background: var(--paper-deep);
+}
+
+.detail-hero img {
+  position: relative;
+  z-index: 0;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(.85) contrast(1.04);
+}
+
+.detail-hero > span {
+  position: absolute;
+  z-index: 1;
+  left: 18px;
+  bottom: 16px;
+  padding: 8px 10px;
+  color: white;
+  background: rgba(25, 28, 24, .76);
+}
+
+.detail-content {
+  padding: 30px 20px 36px;
+  border-bottom: 1px solid var(--ink);
+}
+
+.detail-page .detail-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 16px;
+  color: var(--copper);
+  border-bottom: 1px solid var(--line);
+  font-size: 10px;
+}
+
+.detail-intro {
+  margin: 25px 0;
+  color: var(--ink-soft);
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.detail-facts {
+  border-top: 1px solid var(--ink);
+}
+
+.detail-facts span {
+  display: grid;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 15px;
+}
+
+
+.detail-primary {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 26px;
+  padding: 16px 18px;
+  color: white;
+  background: var(--ink);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.detail-primary strong {
+  color: #d49a81;
+}
+
+.service-detail-panel {
+  margin-top: 24px;
+  padding: 18px;
+  background: var(--paper-deep);
+  border: 1px solid var(--line);
+}
+
+.service-scenic-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--ink);
+}
+
+.service-scenic-tabs button {
+  min-height: 42px;
+  padding: 8px 5px;
+  color: var(--ink-soft);
+  border-right: 1px solid var(--ink);
+  font-size: 10px;
+}
+
+.service-scenic-tabs button:last-child {
+  border-right: 0;
+}
+
+.service-scenic-tabs button.active {
+  color: var(--paper);
+  background: var(--ink);
+}
+
+.service-panel-note {
+  margin: 16px 0;
+  color: var(--ink-soft);
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.service-ticket-list,
+.service-activity-list,
+.service-scenic-data {
+  border-top: 1px solid var(--ink);
+}
+
+.service-ticket-list button,
+.service-activity-list button,
+.service-scenic-data > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+
+.service-ticket-list span,
+.service-activity-list button > span {
+  min-width: 0;
+}
+
+.service-ticket-list strong,
+.service-ticket-list small,
+.service-activity-list strong,
+.service-activity-list small,
+.service-scenic-data span,
+.service-scenic-data strong {
+  display: block;
+}
+
+.service-ticket-list strong,
+.service-activity-list button strong,
+.service-scenic-data strong {
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 13px;
+}
+
+.service-ticket-list small,
+.service-activity-list small,
+.service-scenic-data span {
+  margin-top: 5px;
+  color: var(--ink-soft);
+  font-size: 9px;
+}
+
+.service-ticket-list b,
+.service-activity-list button b {
+  flex: 0 0 auto;
+  color: var(--copper);
+  font-size: 9px;
+}
+
+.traffic-note {
+  margin: 7px 0 0;
+  color: var(--ink-soft);
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.consult-data > div {
+  grid-template-columns: 96px minmax(0, 1fr) auto;
+  align-items: center;
+}
+
+.consult-data small {
+  grid-column: 2;
+  text-align: right;
+}
+
+.consult-call {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 68px;
+  padding: 7px 8px;
+  color: var(--paper);
+  background: var(--ink);
+  font-size: 10px;
+}
+
+.consult-call:hover {
+  background: var(--copper);
+}
+
+.service-activity-list button.active {
+  color: var(--copper);
+  background: rgba(183, 111, 79, .06);
+}
+
+.service-activity-list button.active b {
+  color: var(--ink);
+}
+
+.facility-data > div {
+  position: relative;
+  padding-right: 36px;
+}
+
+.facility-location {
+  position: absolute;
+  right: 0;
+  top: 14px;
+  display: grid;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+  color: var(--copper);
+  border: 1px solid var(--copper);
+  border-radius: 50%;
+  font-size: 17px;
+  line-height: 1;
+}
+
+.facility-location:hover {
+  color: var(--paper);
+  background: var(--copper);
+}
+
+.service-panel-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  padding: 0 0 10px;
+  color: var(--copper);
+  font-size: 9px;
+  letter-spacing: .08em;
+}
+
+.service-panel-title strong {
+  color: var(--ink-soft);
+  font-weight: 400;
+}
+
+.service-scenic-data {
+  margin-top: 18px;
+}
+
+.service-scenic-data > div {
+  display: grid;
+  grid-template-columns: 82px minmax(0, 1fr);
+  align-items: start;
+}
+
+.service-scenic-data span {
+  margin: 0;
+}
+
+.service-scenic-data strong {
+  text-align: right;
+  line-height: 1.55;
+}
+
+.service-scenic-data small {
+  grid-column: 2;
+  margin-top: 4px;
+  color: var(--copper);
+  font-size: 9px;
+  line-height: 1.55;
+  text-align: right;
+}
+
+.ticket-demo-action {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.booking-panel {
+  margin-top: 12px;
+  padding: 24px 18px 20px;
+  background: var(--paper-deep);
+  border: 1px solid var(--line);
+  animation: booking-reveal .28s ease-out;
+}
+
+@keyframes booking-reveal {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.booking-heading {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--ink);
+}
+
+.booking-heading > span,
+.booking-success > span {
+  color: var(--copper);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 9px;
+  letter-spacing: .14em;
+}
+
+.booking-heading h2 {
+  margin: 7px 0 8px;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -.04em;
+}
+
+.booking-heading p,
+.booking-success p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.booking-form {
+  display: grid;
+  gap: 17px;
+  padding-top: 20px;
+}
+
+.booking-form label {
+  display: grid;
+  gap: 8px;
+  color: var(--ink);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  padding: 13px 12px;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 0;
+  outline: none;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  transition: border-color .18s ease, box-shadow .18s ease;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+  border-color: var(--copper);
+  box-shadow: 0 0 0 2px rgba(136, 78, 55, .1);
+}
+
+.booking-form textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.booking-form label small,
+.booking-error {
+  margin: -3px 0 0;
+  color: #a23d2b;
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.booking-form-row {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  gap: 10px;
+}
+
+.booking-privacy {
+  grid-template-columns: 18px 1fr;
+  align-items: start;
+  gap: 9px !important;
+  color: var(--ink-soft) !important;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 10px !important;
+  font-weight: 400 !important;
+  line-height: 1.65;
+}
+
+.booking-privacy input {
+  width: 16px;
+  height: 16px;
+  margin: 1px 0 0;
+  padding: 0;
+  accent-color: var(--copper);
+}
+
+.booking-submit,
+.booking-success button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 16px;
+  color: var(--paper);
+  background: #5e382d;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.booking-submit strong {
+  color: #dfad96;
+}
+
+.booking-success {
+  padding-top: 24px;
+  text-align: center;
+}
+
+.booking-success > strong {
+  display: block;
+  margin: 14px 0 10px;
+  color: #5e382d;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: .08em;
+}
+
+.booking-success button {
+  justify-content: center;
+  margin-top: 0;
+  background: transparent;
+  border: 1px solid var(--ink);
+}
+
+.booking-success-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+  margin-top: 22px;
+}
+
+.booking-success-actions a,
+.booking-success-actions button {
+  min-height: 44px;
+  display: grid;
+  place-items: center;
+  padding: 12px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.booking-success-actions a {
+  color: var(--paper);
+  background: var(--ink);
+}
+
+.booking-success-actions button {
+  color: var(--ink);
+  background: transparent;
+}
+
+.detail-note {
+  margin: 28px 20px;
+  padding: 26px 22px;
+  color: var(--paper);
+  background: #5e382d;
+}
+
+.detail-note h2 {
+  margin: 15px 0 10px;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.detail-note p {
+  margin: 0;
+  color: #d4c8bf;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.scenic-detail-page .detail-header {
+  min-height: 0;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 13px;
+  background: #263e32;
+}
+
+.scenic-detail-page .detail-header::after {
+  content: "";
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  right: -18px;
+  bottom: 16px;
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 50%;
+}
+
+.scenic-detail-page .detail-hero {
+  height: 360px;
+}
+
+.scenic-detail-page .detail-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 45%, rgba(15, 22, 17, .58));
+  pointer-events: none;
+}
+
+.detail-vr-entry {
+  position: absolute;
+  z-index: 2;
+  right: 18px;
+  bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px 9px 9px;
+  color: var(--paper);
+  background: rgba(23, 30, 25, .86);
+  border: 1px solid rgba(255, 255, 255, .38);
+  backdrop-filter: blur(8px);
+}
+
+.detail-vr-entry strong {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  border: 1px solid #d49a81;
+  border-radius: 50%;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 11px;
+}
+
+.detail-vr-entry span {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.scenic-detail-page .detail-content {
+  padding-bottom: 30px;
+  border-bottom: 0;
+}
+
+.scenic-jump-nav {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  display: flex;
+  overflow-x: auto;
+  padding: 0 14px;
+  background: rgba(247, 245, 239, .96);
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+  scrollbar-width: none;
+}
+
+.scenic-jump-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.scenic-jump-nav a {
+  flex: 0 0 auto;
+  padding: 16px 11px 14px;
+  color: var(--ink-soft);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.scenic-jump-nav a:first-child {
+  color: var(--copper);
+}
+
+.scenic-story,
+.scenic-pair-section,
+.scenic-products,
+.scenic-event-section {
+  padding: 42px 20px;
+  scroll-margin-top: 50px;
+  border-bottom: 1px solid var(--ink);
+}
+
+.scenic-section-heading > span {
+  color: var(--copper);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 9px;
+  letter-spacing: .14em;
+}
+
+.scenic-section-heading h2 {
+  margin: 0;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -.05em;
+}
+
+.scenic-section-heading.light > span {
+  color: #d49a81;
+}
+
+.scenic-section-heading.light h2 {
+  color: var(--paper);
+}
+
+.scenic-story > p {
+  margin: 24px 0 26px;
+  color: var(--ink-soft);
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 15px;
+  line-height: 2;
+}
+
+.scenic-story figure {
+  margin: 0;
+  position: relative;
+}
+
+.scenic-story figure img {
+  height: 250px;
+  object-fit: cover;
+  filter: saturate(.78) contrast(1.05);
+}
+
+.scenic-story figcaption {
+  width: calc(100% - 34px);
+  margin: -34px 0 0 34px;
+  position: relative;
+  padding: 20px 18px;
+  color: var(--paper);
+  background: #6b3f31;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.scenic-pair-section {
+  background: var(--paper-deep);
+}
+
+.scenic-feature-card {
+  display: grid;
+  grid-template-columns: 44% 1fr;
+  min-height: 220px;
+  margin-top: 24px;
+  background: var(--paper);
+}
+
+.scenic-feature-card + .scenic-feature-card {
+  margin-top: 14px;
+}
+
+.scenic-feature-card > img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.scenic-feature-card > div {
+  padding: 20px 16px;
+}
+
+.scenic-feature-card > div > span,
+.scenic-product-grid a > span,
+.scenic-event-card div > span,
+.scenic-help > span {
+  color: var(--copper);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 9px;
+  letter-spacing: .1em;
+}
+
+.scenic-feature-card h3 {
+  margin: 8px 0 6px;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.scenic-feature-card div > strong {
+  color: var(--copper);
+  font-size: 9px;
+}
+
+.scenic-feature-card p {
+  margin: 12px 0;
+  color: var(--ink-soft);
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 11px;
+  line-height: 1.75;
+}
+
+.scenic-feature-card a {
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--ink);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.scenic-feature-card.reverse {
+  grid-template-columns: 1fr 44%;
+}
+
+.scenic-feature-card.reverse > img {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.scenic-feature-card.reverse > div {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.scenic-route {
+  padding: 42px 20px;
+  color: var(--paper);
+  background: #263e32;
+  scroll-margin-top: 50px;
+}
+
+.scenic-route-list {
+  margin: 26px 0 22px;
+  border-top: 1px solid rgba(255, 255, 255, .28);
+}
+
+.scenic-route-list div {
+  display: grid;
+  padding: 17px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .17);
+}
+
+
+.scenic-route-list span {
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 14px;
+}
+
+.scenic-route > a {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 16px;
+  color: var(--ink);
+  background: var(--paper);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.scenic-route > a strong {
+  color: var(--copper);
+}
+
+.scenic-product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.scenic-product-grid a {
+  min-width: 0;
+}
+
+.scenic-product-grid img {
+  aspect-ratio: 1;
+  margin-bottom: 13px;
+  object-fit: cover;
+  background: var(--paper-deep);
+}
+
+.scenic-product-grid h3 {
+  margin: 7px 0 10px;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.scenic-product-grid a > strong {
+  font-size: 9px;
+  border-bottom: 1px solid var(--ink);
+}
+
+.scenic-event-section {
+  background: var(--paper-deep);
+}
+
+.scenic-event-card {
+  display: block;
+  margin-top: 24px;
+  color: var(--paper);
+  background: #5e382d;
+}
+
+.scenic-event-card img {
+  height: 210px;
+  object-fit: cover;
+  filter: saturate(.82);
+}
+
+.scenic-event-card div {
+  padding: 20px;
+}
+
+.scenic-event-card div > span {
+  color: #dfad96;
+}
+
+.scenic-event-card h3 {
+  margin: 10px 0 16px;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.scenic-event-card div > strong {
+  color: #e6d8d0;
+  font-size: 10px;
+}
+
+.scenic-help {
+  margin: 28px 20px;
+  padding: 30px 22px;
+  color: var(--paper);
+  background: var(--ink);
+}
+
+.scenic-help > span {
+  color: #d49a81;
+}
+
+.scenic-help h2 {
+  margin: 12px 0 10px;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.scenic-help p {
+  margin: 0;
+  color: #c9c8c0;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.scenic-help div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.scenic-help button,
+.scenic-help a {
+  padding: 13px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.scenic-help button {
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.scenic-help a {
+  border: 1px solid rgba(255, 255, 255, .38);
+}
+
+.product-detail-page .detail-header {
+  background: #59382d;
+}
+
+.product-detail-page .detail-hero {
+  height: 340px;
+}
+
+.product-detail-page .detail-content {
+  padding-bottom: 30px;
+  border-bottom: 0;
+}
+
+.product-story-page {
+  border-top: 1px solid var(--ink);
+}
+
+.product-story-page > section {
+  padding: 42px 20px;
+  border-bottom: 1px solid var(--ink);
+}
+
+.product-section-heading span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--copper);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 9px;
+  letter-spacing: .15em;
+}
+
+.product-section-heading h2 {
+  margin: 0;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -.05em;
+}
+
+.product-section-heading.light span {
+  color: #dfa78f;
+}
+
+.product-section-heading.light h2 {
+  color: var(--paper);
+}
+
+.product-story-intro > p {
+  margin: 24px 0 28px;
+  color: var(--ink-soft);
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 15px;
+  line-height: 2;
+}
+
+.product-story-intro figure {
+  margin: 0;
+  position: relative;
+}
+
+.product-story-intro figure img {
+  height: 258px;
+  object-fit: cover;
+  filter: saturate(.8) contrast(1.04);
+}
+
+.product-story-intro figcaption {
+  width: calc(100% - 32px);
+  margin: -32px 0 0 32px;
+  position: relative;
+  padding: 18px;
+  color: var(--paper);
+  background: #6b4032;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.product-story-page > .product-material-section {
+  padding-top: 0;
+  color: var(--paper);
+  background: var(--moss);
+}
+
+.product-material-section > img {
+  width: calc(100% + 40px);
+  height: 250px;
+  margin-left: -20px;
+  object-fit: cover;
+  filter: saturate(.82) contrast(1.06);
+}
+
+.product-material-section > div {
+  padding: 34px 0 26px;
+}
+
+.product-material-section h3 {
+  margin: 22px 0 10px;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.product-material-section p {
+  margin: 0;
+  color: #d3d4cd;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.product-material-section ol {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, .28);
+  list-style: none;
+}
+
+.product-material-section li {
+  display: grid;
+  grid-template-columns: 38px 1fr;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .18);
+}
+
+.product-material-section li span {
+  display: none;
+}
+
+.product-material-section li strong {
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.product-spec-section dl {
+  margin: 26px 0 0;
+  border-top: 1px solid var(--ink);
+}
+
+.product-spec-section dl div {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  padding: 17px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.product-spec-section dt {
+  color: var(--ink-soft);
+  font-size: 10px;
+}
+
+.product-spec-section dd {
+  margin: 0;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 14px;
+  text-align: right;
+}
+
+.product-story-page > .product-care-section {
+  color: var(--paper);
+  background: #633d30;
+}
+
+.product-care-section .product-section-heading span {
+  color: #dfa78f;
+}
+
+.product-care-section ul {
+  margin: 26px 0 0;
+  padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, .3);
+  list-style: none;
+  counter-reset: care;
+}
+
+.product-care-section li {
+  padding: 16px 0;
+  color: #e1ddd5;
+  border-bottom: 1px solid rgba(255, 255, 255, .18);
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.product-care-section li::before {
+  content: counter(care, decimal-leading-zero);
+  color: #dfa78f;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 10px;
+}
+
+.product-scene-grid {
+  display: grid;
+  gap: 18px;
+  margin-top: 26px;
+}
+
+.product-scene-grid article {
+  display: grid;
+  grid-template-columns: 44% 1fr;
+  min-height: 154px;
+  background: var(--paper-deep);
+}
+
+.product-scene-grid article:nth-child(even) {
+  grid-template-columns: 1fr 44%;
+}
+
+.product-scene-grid article:nth-child(even) img {
+  order: 2;
+}
+
+.product-scene-grid img {
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(.8);
+}
+
+.product-scene-grid article div {
+  align-self: center;
+  padding: 18px;
+}
+
+.product-scene-grid h3 {
+  margin: 0 0 9px;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.product-scene-grid p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 11px;
+  line-height: 1.75;
+}

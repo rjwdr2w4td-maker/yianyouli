@@ -1,0 +1,7 @@
+.eat-page .section-header {
+  border-left: 5px solid #a64f32;
+}
+
+.taste-page .story-entry:nth-child(even) .story-image {
+  margin-left: 28px;
+}

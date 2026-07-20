@@ -1,0 +1,11 @@
+.buy-page .section-header {
+  border-left: 5px solid #8b6b2f;
+}
+
+.buy-page .story-image {
+  height: 236px;
+}
+
+.buy-page .story-entry:nth-child(even) .story-image {
+  margin-left: 40px;
+}

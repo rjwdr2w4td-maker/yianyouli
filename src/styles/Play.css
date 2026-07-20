@@ -1,0 +1,73 @@
+.play-page .section-header {
+  border-left: 5px solid #314b3a;
+}
+
+.play-page .story-entry:nth-child(even) .story-image {
+  margin-right: 32px;
+}
+
+.route-dialog-add {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding: 14px 16px;
+  color: var(--paper);
+  background: var(--ink);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.route-dialog-add span {
+  color: #d49a81;
+}
+
+.route-dialog-add.added {
+  color: var(--ink);
+  background: #dfe8df;
+  box-shadow: inset 0 0 0 1px #9bb19f;
+}
+
+.route-dialog-add.added span {
+  color: var(--moss);
+}
+
+.route-card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.route-card-actions .text-action {
+  margin: 0;
+}
+
+.route-quick-add {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 11px;
+  color: var(--paper);
+  background: var(--ink);
+  border: 1px solid var(--ink);
+  font-size: 9px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.route-quick-add span {
+  color: #d49a81;
+  font-size: 12px;
+}
+
+.route-quick-add.added {
+  color: var(--moss);
+  background: #e3ebe2;
+  border-color: #9db19e;
+}
+
+.route-quick-add.added span {
+  color: var(--moss);
+}

@@ -1,0 +1,239 @@
+.culture-page {
+  background: var(--paper);
+}
+
+.culture-header {
+  min-height: 330px;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background-color: #75452f;
+  background-position: center;
+  background-size: cover;
+}
+
+.culture-header-shade {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(37, 20, 13, .84), rgba(37, 20, 13, .16) 75%);
+}
+
+.culture-header-copy {
+  position: relative;
+}
+
+.culture-intro {
+  min-height: 98px;
+  display: flex;
+  align-items: center;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--ink);
+}
+
+
+.culture-intro strong,
+.culture-intro p {
+  display: block;
+  margin: 0;
+}
+
+.culture-intro strong {
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 20px;
+}
+
+.culture-intro p {
+  margin-top: 6px;
+  color: var(--ink-soft);
+  font-size: 11px;
+}
+
+.culture-filters {
+  display: flex;
+  overflow-x: auto;
+  padding: 0 14px;
+  border-bottom: 1px solid var(--line);
+  scrollbar-width: none;
+}
+
+.culture-filters button {
+  flex: 0 0 auto;
+  padding: 17px 12px 14px;
+  color: #77776f;
+  border-bottom: 3px solid transparent;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.culture-filters button.active {
+  color: var(--ink);
+  border-bottom-color: var(--copper);
+}
+
+.event-empty {
+  padding: 38px 20px;
+  color: var(--ink-soft);
+  text-align: center;
+  border: 1px solid var(--line);
+}
+
+.event-empty strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--ink);
+  font-family: "Songti SC", "STSong", serif;
+  font-size: 20px;
+}
+
+.event-empty p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.event-list {
+  padding: 22px 20px;
+}
+
+.event-card {
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--ink);
+}
+
+.event-image {
+  height: 216px;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: #71806f;
+}
+
+.event-image[data-type="非遗课堂"] {
+  background: #6f5947;
+}
+
+.event-image[data-type="手工体验"] {
+  background: #87715b;
+}
+
+.event-image[data-category="民俗活动"] {
+  background: #8a654b;
+}
+
+.event-image[data-category="传统戏剧"] {
+  background: #6f5947;
+}
+
+.event-image[data-category="传统技艺"] {
+  background: #87715b;
+}
+
+.event-image[data-category="民间文学"] {
+  background: #71806f;
+}
+
+.event-art {
+  position: absolute;
+  inset: 0;
+  background: inherit;
+}
+
+.event-photo {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  filter: saturate(.88) contrast(1.02);
+}
+
+.event-image > img {
+  display: block;
+}
+
+.event-image span {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  padding: 8px 12px;
+  color: white;
+  background: var(--copper);
+  font-size: 10px;
+  letter-spacing: .08em;
+}
+
+.event-content {
+  padding: 15px 0 24px;
+}
+
+.event-date-row {
+  display: flex;
+  justify-content: space-between;
+  color: var(--copper);
+  font-size: 10px;
+  letter-spacing: .05em;
+}
+
+.event-date-row em {
+  padding: 3px 7px;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  font-style: normal;
+}
+
+.event-content h2 {
+  margin: 15px 0 9px;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: -.04em;
+}
+
+.event-place {
+  color: var(--ink-soft);
+  font-size: 11px;
+}
+
+.event-content p {
+  margin: 14px 0;
+  color: var(--ink-soft);
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.event-book {
+  padding: 9px 0 5px;
+  border-bottom: 1px solid var(--ink);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .07em;
+}
+
+.culture-note {
+  margin: 0 20px 28px;
+  padding: 26px 22px;
+  color: var(--paper);
+  background: #5e382d;
+}
+
+.culture-note span {
+  color: #dfa68e;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 9px;
+  letter-spacing: .12em;
+}
+
+.culture-note p {
+  margin: 18px 0;
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.culture-note small {
+  color: #cfc2b8;
+  font-size: 10px;
+}
