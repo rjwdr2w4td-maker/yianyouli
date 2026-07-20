@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Stay.css';
 
-const imageUrl = (prompt, imageSize = 'landscape_4_3') => `https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=${encodeURIComponent(prompt)}&image_size=${imageSize}`;
+const imageUrl = (prompt, imageSize = 'landscape_4_3') => `https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=${encodeURIComponent(prompt)}&image_size=${imageSize}`;
 
 const Stay = () => {
   const [selectedCategory, setSelectedCategory] = useState('全部');

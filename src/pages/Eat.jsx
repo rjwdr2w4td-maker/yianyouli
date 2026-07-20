@@ -3,7 +3,7 @@ import '../styles/Eat.css';
 import { useFeedback } from '../components/Feedback';
 import { readTrips, removeTrip, saveTrip } from '../data/profileStorage';
 
-const imageUrl = (prompt, imageSize = 'landscape_4_3') => `https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=${encodeURIComponent(prompt)}&image_size=${imageSize}`;
+const imageUrl = (prompt, imageSize = 'landscape_4_3') => `https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=${encodeURIComponent(prompt)}&image_size=${imageSize}`;
 
 const Eat = () => {
   const [selectedCategory, setSelectedCategory] = useState('全部');
