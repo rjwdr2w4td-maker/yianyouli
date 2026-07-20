@@ -3,8 +3,7 @@ import '../styles/Play.css';
 import '../styles/RouteMap.css';
 import { useFeedback } from '../components/Feedback';
 import { readTrips, removeTrip, saveTrip } from '../data/profileStorage';
-
-const imageUrl = () => `${import.meta.env.BASE_URL}images/yian-cover.jpg`;
+import { travelImages } from '../data/images';
 
 const routeMaps = {
   '犁桥水镇 · 从黄昏走到入夜': [
@@ -61,7 +60,7 @@ const Play = () => {
       category: '水乡',
       area: '西联镇',
       price: '建议 3 小时',
-      image: imageUrl('Liqiao water town Tongling Yian at dusk, authentic canal village with lanterns and local performance, documentary travel photography'),
+      image: travelImages.attractions.liqiao,
       note: '四点以后抵达最合适。先看白墙黛瓦，再等灯火亮起，最后坐在水边看一场非遗演艺。'
     },
     {
@@ -70,7 +69,7 @@ const Play = () => {
       category: '山野',
       area: '顺安镇',
       price: '建议半日',
-      image: imageUrl('Fenghuang mountain Tongling Yian, peony field and mountain path in spring, realistic documentary travel photography'),
+      image: travelImages.attractions.fenghuang,
       note: '春天为凤丹而来，其他季节则可以把重点放在山林和古铜文化。金牛洞遗址值得单独留时间。'
     },
     {
@@ -79,7 +78,7 @@ const Play = () => {
       category: '铜史',
       area: '义安全域',
       price: '建议自驾',
-      image: imageUrl('Jiangnan Copper Valley road Tongling Yian, rural road through fields and old villages, subtle copper heritage, documentary landscape photography'),
+      image: travelImages.culture.rubbing,
       note: '这不是一个单独景点，而是一条把古村、田野、银杏和采矿记忆串起来的风景道。'
     },
     {
@@ -88,7 +87,7 @@ const Play = () => {
       category: '亲子',
       area: '钟鸣镇',
       price: '建议半日',
-      image: imageUrl('Wutong flower valley Tongling Yian, families walking in seasonal flower fields, natural candid documentary travel photography'),
+      image: travelImages.culture.festival,
       note: '除了花期景观，还有农事和自然体验。安排不必太满，给孩子留出自由观察和玩耍的时间。'
     }
   ];

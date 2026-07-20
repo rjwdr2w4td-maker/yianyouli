@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Eat.css';
 import { useFeedback } from '../components/Feedback';
 import { readTrips, removeTrip, saveTrip } from '../data/profileStorage';
-
-const imageUrl = () => `${import.meta.env.BASE_URL}images/yian-cover.jpg`;
+import { travelImages } from '../data/images';
 
 const Eat = () => {
   const [selectedCategory, setSelectedCategory] = useState('全部');
@@ -18,7 +17,7 @@ const Eat = () => {
       category: '老味道',
       area: '钟鸣镇',
       price: '铜钱消费',
-      image: imageUrl('Yongquan Jiangnan food street Tongling Yian, authentic traditional snack stalls, Hui style architecture, documentary food photography, natural light'),
+      image: travelImages.attractions.yongquan,
       note: '先换一袋铜钱，再沿青石路挑小吃。杀猪汤、米粉和炉火边的点心，比“网红感”更像一段真实日常。'
     },
     {
@@ -27,7 +26,7 @@ const Eat = () => {
       category: '水镇宴',
       area: '西联镇',
       price: '人均约 ¥90',
-      image: imageUrl('Liqiao water town local family banquet Tongling Yian, traditional rice and river fish dishes, round building interior, documentary food photography'),
+      image: travelImages.attractions.liqiao,
       note: '太白雕胡饭、小河鱼和时令菜适合多人围坐。吃完正好等水镇亮灯，再慢慢走进夜游。'
     },
     {
@@ -36,7 +35,7 @@ const Eat = () => {
       category: '农家菜',
       area: '顺安镇',
       price: '人均约 ¥75',
-      image: imageUrl('Tongling Yian farmhouse lunch, local river fish, free range chicken, seasonal vegetables, simple wooden table, documentary food photography'),
+      image: travelImages.culture.heritage,
       note: '没有复杂摆盘，重点是锅气和食材。走凤凰山、江南铜谷一线时，在这里停一顿最合适。'
     },
     {
@@ -45,7 +44,7 @@ const Eat = () => {
       category: '随手礼',
       area: '顺安镇',
       price: '¥20 起',
-      image: imageUrl('Tongling white ginger and Shunan crispy sesame candy on simple linen cloth, authentic local specialty still life photography'),
+      image: travelImages.products.candy,
       note: '白姜脆、辣、回甘，酥糖则是芝麻和麦芽糖的旧时香气。一咸一甜，是最精简的义安味觉名片。'
     }
   ];

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Stay.css';
-
-const imageUrl = () => `${import.meta.env.BASE_URL}images/yian-cover.jpg`;
+import { travelImages } from '../data/images';
 
 const Stay = () => {
   const [selectedCategory, setSelectedCategory] = useState('全部');
@@ -14,7 +13,7 @@ const Stay = () => {
       category: '山居',
       area: '钟鸣镇',
       price: '¥680 起',
-      image: imageUrl('Yongquan Songyun mountain residence Tongling Yian, authentic Hui style courtyard in forest mist, restrained boutique hotel photography'),
+      image: travelImages.attractions.yongquan,
       phone: '05625689101',
       note: '院落藏在山林里，适合把行程留白。傍晚散步，夜里泡温泉，第二天再去看忆江南十二景。'
     },
@@ -24,7 +23,7 @@ const Stay = () => {
       category: '山居',
       area: '钟鸣镇',
       price: '¥520 起',
-      image: imageUrl('quiet bamboo courtyard homestay in Yongquan Tongling Yian, natural morning light, authentic travel lodging photography'),
+      image: travelImages.culture.heritage,
       phone: '05625689202',
       note: '竹影让空间显得很静。比起赶景点，这里更适合早起喝茶、在小镇里慢慢消磨半天。'
     },
@@ -34,7 +33,7 @@ const Stay = () => {
       category: '水院',
       area: '西联镇',
       price: '¥420 起',
-      image: imageUrl('Liqiao water town riverside courtyard homestay Tongling Yian, Hui style house, canal and lantern reflection, documentary travel photography'),
+      image: travelImages.attractions.liqiao,
       phone: '05625689303',
       note: '住处离水巷很近。夜游散场后不用匆忙离开，清晨还能看见水镇尚未热闹起来的样子。'
     },
@@ -44,7 +43,7 @@ const Stay = () => {
       category: '露营',
       area: '义安乡野',
       price: '¥168 起',
-      image: imageUrl('riverside forest camping in Tongling Yian, simple canvas tent, coffee and barbecue, candid lifestyle travel photography'),
+      image: travelImages.attractions.fenghuang,
       phone: '05625689404',
       note: '林间咖啡、烧烤和帐篷组成一个轻量周末。更适合朋友结伴，也适合带孩子亲近自然。'
     }
