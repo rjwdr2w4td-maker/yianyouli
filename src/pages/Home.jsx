@@ -6,12 +6,14 @@ import { useFeedback } from '../components/Feedback';
 import '../styles/Home.css';
 import { travelImages } from '../data/images';
 import VillagerHome from './VillagerHome';
+import GovernmentHome from './GovernmentHome';
 
 const Home = () => {
   const { activeRole } = useRole();
   const { openDialog } = useFeedback();
 
   if (activeRole === 'villager') return <VillagerHome />;
+  if (activeRole === 'government') return <GovernmentHome />;
 
   const attractions = [
     { id: 'liqiao', name: '犁桥水镇', label: '今夜推荐', detail: '灯影水巷 · 非遗演艺', image: travelImages.attractions.liqiao },

@@ -25,13 +25,19 @@ const BottomNav = () => {
     { id: 'build', to: '/villager/module/build', label: '共建', icon: 'build', active: currentTab === 'villager' && (villagerModule === 'build' || ['vote', 'stall', 'house', 'course', 'job', 'appeal', 'pioneer'].includes(villagerSlug)) },
     { id: 'profile', to: '/profile', label: '我的', icon: 'profile', active: currentTab === 'profile' }
   ];
-  const navItems = activeRole === 'villager' ? villagerItems : visitorItems;
+  const governmentItems = [
+    { id: 'home', to: '/home', label: '驾驶舱', icon: 'services', paths: ['home'] },
+    { id: 'monitoring', to: '/government/monitoring', label: '监控', icon: 'explore', paths: ['government'], section: 'monitoring' },
+    { id: 'work', to: '/government/work', label: '协同', icon: 'build', paths: ['government'], section: 'work' },
+    { id: 'profile', to: '/profile', label: '我的', icon: 'profile', paths: ['profile'] }
+  ];
+  const navItems = activeRole === 'villager' ? villagerItems : activeRole === 'government' ? governmentItems : visitorItems;
 
   return (
-    <nav className={`bottom-nav ${activeRole === 'villager' ? 'villager-nav' : ''}`} aria-label="主要导航">
+    <nav className={`bottom-nav ${activeRole === 'villager' ? 'villager-nav' : ''} ${activeRole === 'government' ? 'government-nav' : ''}`} aria-label="主要导航">
       <div className="bottom-nav-inner">
         {navItems.map((item) => {
-          const isActive = activeRole === 'villager' ? item.active : item.paths.includes(currentTab);
+          const isActive = activeRole === 'villager' ? item.active : activeRole === 'government' ? (item.id === 'home' ? location.pathname === '/home' : location.pathname === item.to) : item.paths.includes(currentTab);
           return <Link key={item.id} to={item.to} className={`bottom-nav-item ${isActive ? 'active' : ''}`} aria-current={isActive ? 'page' : undefined}><span className="bottom-nav-icon"><Icon name={item.icon} size={20} /></span><span>{item.label}</span></Link>;
         })}
       </div>

@@ -29,13 +29,13 @@ const roles = {
   },
   government: {
     label: '政务',
-    greeting: '文旅治理工作台',
-    note: '全域景区、活动与服务态势',
-    metrics: [['约 1200', '今日游客'], ['86%', '预约核销'], ['4', '待处理']],
+    greeting: '数字文旅治理工作台',
+    note: '景区态势、全域监控、镇村数据与业务协同',
+    metrics: [['6,120', '全区实时游客'], ['42 / 45', '在线监控点位'], ['18', '待协同事项']],
     sections: [
-      ['内容运营', '景区、活动与服务入口正常', '内容管理'],
-      ['服务调度', '主要景区正常开放 · 1 条提醒', '查看态势'],
-      ['数据简报', '夜游活动访问热度持续上升', '打开简报']
+      ['政务驾驶舱', '/home', '查看全区景区、监控、镇村和协同态势'],
+      ['全域监控', '/government/monitoring', '选择监控点位，查看实时画面与 AI 预警'],
+      ['镇村数据', '/government/villages', '查看人口、年龄、收入与游客统计']
     ]
   }
 };
@@ -67,7 +67,7 @@ const Profile = () => {
     window.setTimeout(() => window.location.reload(), 0);
   };
 
-  const linkedSections = activeRole === 'visitor' || activeRole === 'villager';
+  const linkedSections = ['visitor', 'villager', 'government'].includes(activeRole);
 
   return (
     <div className="travel-page profile-page">

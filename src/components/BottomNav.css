@@ -87,3 +87,34 @@
   color: var(--copper);
   background: #f0ded5;
 }
+
+.government-nav {
+  color: #5a5a5a;
+  background: rgba(255, 255, 255, .98);
+  border-top-color: #e5e7eb;
+  box-shadow: 0 -2px 12px rgba(0, 0, 0, .06);
+}
+
+.government-nav .bottom-nav-inner {
+  grid-template-columns: repeat(4, 1fr);
+  background: rgba(255, 255, 255, .9);
+  border-color: #e5e7eb;
+}
+
+.government-nav .bottom-nav-item.active {
+  color: #c0392b;
+  background: rgba(192, 57, 43, .06);
+}
+
+.government-nav .bottom-nav-item.active::before {
+  background: #c0392b;
+  box-shadow: 0 0 8px rgba(192, 57, 43, .4);
+}
+
+.government-nav .bottom-nav-icon {
+  color: #888;
+}
+
+.government-nav .bottom-nav-item.active .bottom-nav-icon {
+  color: #c0392b;
+}

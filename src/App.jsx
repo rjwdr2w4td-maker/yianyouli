@@ -15,6 +15,7 @@ import VillagerFeature from './pages/VillagerFeature';
 import VillagerModule from './pages/VillagerModule';
 import VillagerContentDetail from './pages/VillagerContentDetail';
 import VillagerServiceDetail from './pages/VillagerServiceDetail';
+import GovernmentHome from './pages/GovernmentHome';
 import { AttractionDetail, CultureDetail, ProductDetail, ServiceDetail } from './pages/Detail';
 import BottomNav from './components/BottomNav';
 import ScrollToTop from './components/ScrollToTop';
@@ -32,6 +33,10 @@ function App() {
               <Routes>
                 <Route path="/" element={<Navigate to="/home" />} />
                 <Route path="/home" element={<Home />} />
+                <Route path="/government" element={<GovernmentHome />} />
+                <Route path="/government/monitoring" element={<GovernmentHome initialSection="monitoring" />} />
+                <Route path="/government/villages" element={<GovernmentHome initialSection="villages" />} />
+                <Route path="/government/work" element={<GovernmentHome initialSection="work" />} />
                 <Route path="/villager" element={<VillagerHome />} />
                 <Route path="/villager/module/:type" element={<VillagerModule />} />
                 <Route path="/villager/content/:type/:id" element={<VillagerContentDetail />} />
