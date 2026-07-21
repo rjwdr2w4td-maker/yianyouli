@@ -66,7 +66,7 @@ const attractionStories = {
     quote: '花开有时，铜史长存；山路把两段时间放在同一片风景里。',
     vr: '预览凤丹花田、山野步道与金牛洞遗址方向，提前判断步行强度。',
     stay: { title: '永泉竹塰人家', meta: '车程约 25 分钟 · ¥520 起', text: '结束半日山行后转入竹林院落休息，适合与永泉小镇组合成两日行程。', image: travelImages.attractions.yongquan },
-    food: { title: '山里任家', meta: '人均约 ¥75 · 顺安镇', text: '小河鱼、散养鸡与时令蔬菜讲究锅气，是走完山路后朴素而踏实的一餐。', image: travelImages.attractions.fenghuang },
+    food: { title: '山里任家', meta: '人均约 ¥75 · 顺安镇', text: '小河鱼、散养鸡与时令蔬菜讲究锅气，是走完山路后朴素而踏实的一餐。', image: travelImages.culture.gingerClass },
     play: ['08:30 从北入口上山', '10:00 凤丹花田或山野步道', '11:30 探访金牛洞遗址', '13:00 顺安镇农家午餐'],
     products: [{ id: 3, title: '顺安酥糖', image: travelImages.products.candy }, { id: 5, title: '铜都书签套装', image: travelImages.products.bookmark }],
     event: { id: 1, eyebrow: '04.18—05.05', title: '凤凰山凤丹文化旅游季', status: '报名中', image: travelImages.culture.festival }
