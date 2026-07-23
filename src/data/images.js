@@ -3,27 +3,27 @@ const createImageUrl = (filename) => `${import.meta.env.BASE_URL}images/${filena
 export const travelImages = {
   homeCover: createImageUrl('yian-cover.jpg'),
   attractions: {
-    liqiao: createImageUrl('liqiao.jpg'),
-    yongquan: createImageUrl('yongquan.jpg'),
-    fenghuang: createImageUrl('fenghuang.jpg')
+    liqiao: createImageUrl('attraction-liqiao.jpg'),
+    yongquan: createImageUrl('attraction-yongquan.jpg'),
+    fenghuang: createImageUrl('attraction-fenghuang.jpg')
   },
   culture: {
-    festival: createImageUrl('festival.jpg'),
-    heritage: createImageUrl('heritage.jpg'),
-    rubbing: createImageUrl('rubbing.jpg'),
-    gingerClass: createImageUrl('ginger-class.jpg')
+    festival: createImageUrl('culture-festival.jpg'),
+    heritage: createImageUrl('culture-heritage.jpg'),
+    rubbing: createImageUrl('culture-rubbing.jpg'),
+    gingerClass: createImageUrl('culture-ginger.jpg')
   },
   villager: {
     home: createImageUrl('villager-home.jpg'),
     affairs: createImageUrl('villager-affairs.jpg'),
     build: createImageUrl('villager-build.jpg'),
     service: createImageUrl('villager-service.jpg'),
-    pointsGinger: createImageUrl('points-ginger.jpg'),
-    pointsCoffee: createImageUrl('points-coffee.jpg'),
-    pointsFarm: createImageUrl('points-farm.jpg'),
-    stallGinger: createImageUrl('stall-ginger.jpg'),
-    houseCourtyard: createImageUrl('house-courtyard.jpg'),
-    courseVideoCover: createImageUrl('course-video.jpg')
+    pointsGinger: createImageUrl('villager-points-ginger.jpg'),
+    pointsCoffee: createImageUrl('villager-points-coffee.jpg'),
+    pointsFarm: createImageUrl('villager-points-farm.jpg'),
+    stallGinger: createImageUrl('villager-stall-ginger.jpg'),
+    houseCourtyard: createImageUrl('villager-house.jpg'),
+    courseVideoCover: createImageUrl('villager-course-video.jpg')
   },
   products: {
     gingerJar: createImageUrl('product-ginger-jar.jpg'),
